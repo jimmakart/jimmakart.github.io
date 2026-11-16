@@ -1,0 +1,67 @@
+# Deploy JimMart to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate artworks index
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          artworks = []
+          folder = Path("content/artworks")
+
+          for file in sorted(folder.glob("*")):
+              if file.suffix.lower() not in (".json", ".md"):
+                  continue
+
+              with file.open(encoding="utf-8") as f:
+                  artwork = json.load(f)
+                  artwork["id"] = file.stem
+                  artworks.append(artwork)
+
+          output = Path("content/artworks-index.json")
+          output.parent.mkdir(parents=True, exist_ok=True)
+          output.write_text(
+              json.dumps(artworks, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8"
+          )
+
+          print(f"Indexed {len(artworks)} artworks")
+          PY
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

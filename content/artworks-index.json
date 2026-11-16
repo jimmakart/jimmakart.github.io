@@ -1,0 +1,63 @@
+[
+  {
+    "name": "body n",
+    "image": "/media/body n.jpg",
+    "category": "paintings",
+    "id": "2026-11-09-body-n"
+  },
+  {
+    "name": "circus creature",
+    "image": "/media/circus creature (2).jpg",
+    "category": "paintings",
+    "dimensions": "2x2",
+    "series": "who",
+    "materials": "damn",
+    "id": "2026-11-09-circus-creature"
+  },
+  {
+    "name": "creature 5 ",
+    "image": "/media/creature (5).jpg",
+    "category": "paintings",
+    "dimensions": "500x500",
+    "series": "creature",
+    "materials": "ladi kai fotia",
+    "id": "2026-11-09-creature-5"
+  },
+  {
+    "image": "/jimmart/media/bumblebees.png",
+    "name": "Bumblebees",
+    "category": "digital",
+    "id": "bumblebees"
+  },
+  {
+    "category": "video",
+    "video_file": "/jimmart/media/dimitris-makrynikas-05-passengers-video-5-sec-22.mp4",
+    "name": "passengers",
+    "id": "map-category-video-video_file-jimmart-media-dimitris-makrynikas-05-passengers-video-5-sec-22-mp4-name-passengers"
+  },
+  {
+    "image": "/jimmart/media/circus creature.jpg",
+    "name": "CIRCUS CREATURE",
+    "category": "paintings",
+    "id": "map-image-jimmart-media-circus-creature-jpg-name-circus-creature-category-paintings"
+  },
+  {
+    "image": "media/creature-2-.jpg",
+    "name": "creature (2)",
+    "category": "paintings",
+    "dimensions": "6000x4000",
+    "id": "map-image-jimmart-media-creature-2-jpg-name-creature-2-category-paintings-dimensions-6000x4000"
+  },
+  {
+    "image": "/jimmart/media/creature-3-.jpg",
+    "name": "creature (3)",
+    "category": "paintings",
+    "id": "map-image-jimmart-media-creature-3-jpg-name-creature-3-category-paintings"
+  },
+  {
+    "youtube_url": "https://youtu.be/nvzuGJV7muI",
+    "name": "after humans",
+    "category": "video",
+    "id": "map-youtube_url-https-youtu-be-nvzugjv7mui-name-after-humans-category-video"
+  }
+]

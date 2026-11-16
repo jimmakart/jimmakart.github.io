@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Statement</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bio-page">
+  
+<nav class="navbar">
+  <div class="nav-container">
+    <!-- MOBILE MENU BUTTON -->
+<button
+  class="mobile-menu-toggle"
+  type="button"
+  aria-label="Open menu"
+  aria-expanded="false"
+  aria-controls="mobile-navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+    <!-- LEFT MENU -->
+    <ul class="nav-links nav-left">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <span class="dropdown-label">Artworks ▾</span>
+        <ul class="dropdown-menu">
+          <li><a href="paintings.html">Paintings</a></li>
+          <li><a href="digital.html">Digital</a></li>
+          <li><a href="posters.html">Posters</a></li>
+          <li><a href="sculptures.html">Sculptures</a></li>
+          <li><a href="installations.html">Installations</a></li>
+          <li><a href="illustrations.html">Illustrations</a></li>
+          <li><a href="video.html">Videography</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- CENTER BRUSH LOGO -->
+<a href="index.html" class="nav-logo" aria-label="JimMart Home">
+
+  <img src="white-brush.png"
+       alt=""
+       class="logo-stain">
+
+  <img src="LOGO.jpg"
+       alt="JimMart Logo"
+       class="nav-logo-image">
+
+</a>
+
+    <!-- RIGHT MENU -->
+    <ul class="nav-links nav-right">
+      <li><a href="bio.html">Artist Statement</a></li>
+      <li><a href="#" id="contact-trigger">Contact</a></li>
+    </ul>
+
+  </div>
+  <!-- MOBILE NAVIGATION -->
+<div class="mobile-navigation" id="mobile-navigation">
+  <a href="index.html">Home</a>
+
+  <details>
+    <summary>Artworks</summary>
+    <a href="paintings.html">Paintings</a>
+    <a href="digital.html">Digital</a>
+    <a href="posters.html">Posters</a>
+    <a href="sculptures.html">Sculptures</a>
+    <a href="installations.html">Installations</a>
+    <a href="illustrations.html">Illustrations</a>
+    <a href="video.html">Videography</a>
+  </details>
+
+  <a href="bio.html">Artist Statement</a>
+  <a href="#" id="mobile-contact-trigger">Contact</a>
+</div>
+</nav>
+
+<main class="artist-statement">
+
+  <article class="parchment">
+
+    <div class="parchment-text">
+
+      <h1>Artist Statement</h1>
+
+      <p class="opening" id="cms-statement">
+          I am a Greek artist based in Athens and in Paros known for my acrylic paintings of creatures, also my sculptures, my digital artworks, and mixed media art. 
+        My art flows through themes like the alien creatures, their environment, and their everyday life. 
+        Other subjects like the pollution of earth, control, portraits, readymade sculptures, landscapes, body, diversity, and documentary photography. 
+        The mediums I use are acrylic paint for the paintings with some of them to have also ink or clay my sculptures have a variety of clay, metal, liquid glass, concrete and fabrics. 
+        The style I use in my artworks are surrealism, abstract and realism. 
+        I am influenced by cartoons and books also my experience from my childhood as a queer human in an island. 
+        Some of my favorite artists are Dr Seuss, Chris Sanders, Erika Sanada, Peca, Jesus Aguado, Hieronymus Bosch, Francis Bacon, H.R. Giger, Patricia Piccinini and Thomas Grünfeld. 
+        My paintings explore every dimension of life, sex, and environments through the cosmos. In a world dominated by control, I want my art to be a free landscape of diversity who humans can identify with. 
+      </p>
+
+      <h1>EXHIBITIONS </h1>
+
+      <ul class="art-list" id="cms-exhibitions">
+  <li>2025 — Photography Exhibition: Rural Architecture of Paros, Dimitrakopoulos Building, Paros</li>
+
+  <li>2024 — Art Number 23 Gallery, Athens</li>
+
+  <li>2024 — VAIF 24, Visual Arts Festival, Thessaloniki</li>
+
+  <li>2022 — Theater Psyrri, Athens</li>
+
+  <li>2022 — Glad Film Festival, Thessaloniki</li>
+
+  <li>2019 — Megartgallery, Agios Ioannis, Athens</li>
+</ul>
+
+    </div>
+
+  </article>
+
+</main>
+<!-- Cursor + Lightbox -->
+<div class="cursor"></div>
+
+<div class="lightbox" id="lightbox">
+  <img src="" id="lightbox-img">
+</div>
+<!-- Τερατάκι Linktree -->
+  <script src="script.js"></script>
+ <a href="https://linktr.ee/Jimmakrr"
+   id="dvd-monster"
+   target="_blank"
+   rel="noopener noreferrer">
+  <img src="terataki link tree.png" alt="Visit my Linktree">
+</a>
+<script>
+const contactTrigger = document.getElementById('contact-trigger');
+const dvdMonster = document.getElementById('dvd-monster');
+
+contactTrigger.addEventListener('click', function(event) {
+  event.preventDefault();
+
+  // Δημιουργούμε νέο τερατάκι
+  const monster = dvdMonster.cloneNode(true);
+  monster.removeAttribute('id');
+  monster.classList.add('moving-monster');
+
+  document.body.appendChild(monster);
+
+  monster.style.display = 'block';
+
+  let x = Math.random() * Math.max(0, window.innerWidth - monster.offsetWidth);
+  let y = Math.random() * Math.max(0, window.innerHeight - monster.offsetHeight);
+
+  let dx = (Math.random() < 0.5 ? -1 : 1) * 2.5;
+  let dy = (Math.random() < 0.5 ? -1 : 1) * 2;
+
+  function animateMonster() {
+    const maxX = Math.max(0, window.innerWidth - monster.offsetWidth);
+    const maxY = Math.max(0, window.innerHeight - monster.offsetHeight);
+
+    x += dx;
+    y += dy;
+
+    if (x <= 0 || x >= maxX) {
+      dx *= -1;
+      x = Math.max(0, Math.min(x, maxX));
+    }
+
+    if (y <= 0 || y >= maxY) {
+      dy *= -1;
+      y = Math.max(0, Math.min(y, maxY));
+    }
+
+    monster.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+
+    requestAnimationFrame(animateMonster);
+  }
+
+  animateMonster();
+});
+  /* ===== MOBILE MENU ===== */
+const mobileMenuButton = document.querySelector('.mobile-menu-toggle');
+const mobileNavigation = document.getElementById('mobile-navigation');
+const mobileContactTrigger = document.getElementById('mobile-contact-trigger');
+
+if (mobileMenuButton && mobileNavigation) {
+  function closeMobileMenu() {
+    mobileNavigation.classList.remove('is-open');
+    mobileMenuButton.setAttribute('aria-expanded', 'false');
+    mobileMenuButton.setAttribute('aria-label', 'Open menu');
+  }
+
+  mobileMenuButton.addEventListener('click', () => {
+    const isOpen = mobileNavigation.classList.toggle('is-open');
+    mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
+    mobileMenuButton.setAttribute(
+      'aria-label',
+      isOpen ? 'Close menu' : 'Open menu'
+    );
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMobileMenu();
+  });
+
+  document.addEventListener('click', event => {
+    if (
+      !mobileNavigation.contains(event.target) &&
+      !mobileMenuButton.contains(event.target)
+    ) {
+      closeMobileMenu();
+    }
+  });
+
+  mobileNavigation.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+}
+
+/* ===== MOBILE CONTACT ===== */
+if (mobileContactTrigger && contactTrigger) {
+  mobileContactTrigger.addEventListener('click', event => {
+    event.preventDefault();
+    contactTrigger.click();
+  });
+}
+</script>
+</body>
+</html>
+
+
+
+
+

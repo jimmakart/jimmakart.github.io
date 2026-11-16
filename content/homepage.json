@@ -1,0 +1,30 @@
+{
+  "paintings": {
+    "left": "2026-11-09-creature-5",
+    "right": "2026-11-09-body-n"
+  },
+  "digital": {
+    "left": "/images/digital/bloom.png",
+    "right": "/images/digital/blue s.jpg"
+  },
+  "posters": {
+    "left": "/images/posters/antropocene (1).jpg",
+    "right": "/images/posters/antropocene (3).jpg"
+  },
+  "sculptures": {
+    "left": "/media/hands escaping (1).bmp",
+    "right": "/media/capturing plastic (1).jpeg"
+  },
+  "installations": {
+    "left": "/media/P1040335.jpg",
+    "right": "/media/P1040338.jpg"
+  },
+  "illustrations": {
+    "left": "/images/illustration/map.jpg",
+    "right": "/images/illustration/mock up.jpg"
+  },
+  "video": {
+    "left": "map-category-video-video_file-jimmart-media-dimitris-makrynikas-05-passengers-video-5-sec-22-mp4-name-passengers",
+    "right": "/Chalk.png"
+  }
+}

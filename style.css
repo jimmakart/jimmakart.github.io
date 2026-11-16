@@ -1,0 +1,1192 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #00E5FF, #0099cc, #003344);
+  color: #e6faff;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #00E5FF, #0099cc, #003344);
+  padding: 5px 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* Sections */
+/* SECTIONS — brushstroke design */
+.section {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 400px;
+  margin-top: 100px;
+  padding: 45px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 0;
+}
+
+/* Η πινελιά πίσω από το περιεχόμενο */
+
+.section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+
+  background-image: url("./Turquoise Textured Paint Stroke.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: filter;
+}
+
+
+/* Κενό πάνω από την πρώτη πινελιά */
+.section:first-of-type {
+  margin-top: 100vh;
+}
+
+/* Τίτλος και κείμενο στο κέντρο */
+.section-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+.section-content p {
+  margin-bottom: 12px;
+}
+
+/* Εικόνες αριστερά και δεξιά */
+.section-art {
+  position: absolute;
+  top: 50%;
+  width: 22%;
+  max-width: 260px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.section-art.left {
+  left: 7%;
+}
+
+.section-art.right {
+  right: 7%;
+}
+
+.section-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+.section-art img:hover {
+  transform: scale(1.1);
+}
+
+/* Κινητά και μικρές οθόνες */
+@media (max-width: 700px) {
+  .section {
+    min-height: 440px;
+    margin-top: 55px;
+    padding: 30px 5%;
+  }
+
+  .section-content {
+    width: 65%;
+  }
+
+  .section h2 {
+    font-size: 25px;
+  }
+
+  .section-art {
+    width: 25%;
+  }
+
+  .section-art.left {
+    left: 2%;
+  }
+
+  .section-art.right {
+    right: 2%;
+  }
+
+  .section-art img {
+    height: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects {
+  display: grid; /* grid για να έχεις ευκολία στη διάταξη */
+  grid-template-columns: repeat(3, 1fr); /* 3 project ανά σειρά */
+  gap: 60px; /* απόσταση ανάμεσα στα project */
+  max-width: 1200px; /* περιορίζει το πλάτος του grid */
+  margin: 0 auto; /* κεντράρει το grid στο section */
+  padding: 20px 0; /* λίγη απόσταση πάνω/κάτω */
+}
+
+.projects img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+.projects img:hover {
+  transform: scale(1.05);
+}
+
+.projects h3 {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.projects p {
+  opacity: 0.8;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* κεντράρει το περιεχόμενο */
+  justify-content: flex-start;
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+/* ===== FONTS ===== */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ===== PARALLAX ===== */
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== FADE REVEAL ===== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== CUSTOM CURSOR ===== */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  z-index: 9999;
+}
+
+/* ===== LIGHTBOX ===== */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.hero-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Κάνει fullscreen το hero */
+  overflow: hidden;
+}
+
+.hero-video-wrapper iframe.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%; /* λίγο μεγαλύτερο για να γεμίζει */
+  height: 120%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* να μην μπλοκάρει clicks */
+}
+
+/* ===== NAV LINKS STRUCTURE ===== */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* ===== DROPDOWN ===== */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0,0,0,0.95);
+  list-style: none;
+  padding: 15px 0;
+  display: none;
+  min-width: 180px;
+  border-radius: 6px;
+  margin-top: 0;
+  z-index: 1100;
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  color: #ffd700;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+/* ===== GLOBAL YOUTUBE BACKGROUND ===== */
+
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(1.4);
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* ===== MOBILE BACKGROUND VIDEO ===== */
+
+/* Hidden on desktop */
+#mobile-bg-video {
+  display: none;
+}
+
+/* Mobile only */
+@media (max-width: 900px) {
+  #bg-video {
+    display: none;
+  }
+
+  #mobile-bg-video {
+    display: block;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    pointer-events: none;
+  }
+}
+
+/* Different brush color for each section */
+
+.section:nth-of-type(1)::before {
+  filter: hue-rotate(175deg) saturate(2) brightness(1.2);
+}
+
+.section:nth-of-type(2)::before {
+  filter: hue-rotate(300deg) saturate(2.2) brightness(1.1);
+}
+
+.section:nth-of-type(3)::before {
+  filter: hue-rotate(130deg) saturate(2);
+}
+
+.section:nth-of-type(4)::before {
+  filter: hue-rotate(0deg);
+}
+
+.section:nth-of-type(5)::before {
+  filter: hue-rotate(260deg) saturate(2);
+}
+
+.section:nth-of-type(6)::before {
+  filter: hue-rotate(40deg) saturate(2);
+}
+.section:nth-of-type(7)::before {
+  filter: hue-rotate(90deg) saturate(1.8);
+}
+/* NAVBAR LAYOUT */
+
+.navbar .nav-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+}
+
+.navbar .nav-left {
+  grid-column: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 180px;
+}
+
+.navbar .nav-right {
+  grid-column: 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 180px;
+}
+
+/* CENTER LOGO */
+
+.navbar .nav-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 260px;
+  height: 110px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.navbar .logo-stain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .nav-logo-image {
+  position: relative;
+  z-index: 2;
+  width: 125px;
+  height: 65px;
+  object-fit: contain;
+}
+/* Fix spacing for new navbar */
+
+.navbar .nav-left li,
+.navbar .nav-right li {
+  margin-left: 0;
+}
+
+.navbar .nav-left,
+.navbar .nav-right {
+  padding-left: 0;
+}
+/* STARBORN FONT */
+
+@font-face {
+  font-family: 'Starborn';
+  src: url('./Starborn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NAVBAR TEXT */
+.navbar .nav-links a,
+.navbar .nav-links .dropdown-label {
+  font-family: 'Starborn', cursive;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-left: 0;
+}
+
+@font-face {
+  font-family: 'Leckerli One';
+  src: url('./LeckerliOne-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+.section-content h2 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 85px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+.section-content h2:hover {
+  transform: scale(1.1);
+}
+#dvd-monster {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  display: none;
+  z-index: 2000;
+  cursor: pointer;
+  will-change: transform;
+}
+
+#dvd-monster img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* ARTIST STATEMENT BACKGROUND */
+
+body.bio-page {
+  background-image: url("./PG3.jpg1-01.jpg");
+  background-repeat: repeat-x;
+  background-size: auto 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+/* ARTIST STATEMENT — ONE SCROLL */
+
+.bio-page .artist-statement {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 40px auto 80px;
+}
+
+.bio-page .parchment {
+  width: 100%;
+  max-width: 1050px; /* Πιο φαρδύ scroll */
+  min-height: 900px;
+
+  background-image: url("./Scroll 1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 320px 110px 110px; /* Το κείμενο ξεκινά πιο κάτω */
+  box-sizing: border-box;
+}
+
+.bio-page .parchment-text {
+  font-family: 'Grenze Gotisch', serif;
+  color: #442817;
+  text-align: left;
+}
+
+.bio-page .parchment-text h1 {
+  font-family: 'Grenze Gotisch', serif;
+  font-size: 75px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 45px;
+}
+
+.bio-page .parchment-text p {
+  font-size: 29px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+.bio-page .parchment-text .opening {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.bio-page .parchment-text .signature {
+  font-family: 'Grenze Gotisch', serif;
+  font-size: 43px;
+  text-align: right;
+  margin-top: 55px;
+}
+/* ARTISTIC EXHIBITION LIST */
+
+.bio-page .art-list {
+  list-style: none;
+  padding-left: 15px;
+  margin: 0 0 35px;
+
+  font-family: 'Grenze Gotisch', serif;
+  font-size: 29px;
+  line-height: 1.5;
+  color: #442817;
+}
+
+.bio-page .art-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 18px;
+}
+
+.bio-page .art-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #8b5a32;
+}
+/* ===== ARTIST STATEMENT — MOBILE ===== */
+
+@media (max-width: 700px) {
+
+  body.bio-page {
+    background-size: auto 100%;
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+  }
+
+  .bio-page .artist-statement {
+    margin: 110px auto 50px;
+    padding: 0 8px;
+  }
+
+.bio-page .parchment {
+  width: 100%;
+  max-width: 500px;
+  min-height: 750px;
+
+  border-style: solid;
+  border-width: 145px 0 95px;
+  border-image-source: url("./Scroll 1.png");
+  border-image-slice: 25% 0 20% fill;
+  border-image-width: 145px 0 95px;
+  border-image-repeat: stretch;
+
+  background: none;
+  padding: 0 12%;
+  box-sizing: border-box;
+}
+
+  .bio-page .parchment-text h1 {
+    font-size: clamp(25px, 7vw, 38px);
+    margin-bottom: 25px;
+  }
+
+  .bio-page .parchment-text p {
+    font-size: clamp(15px, 4vw, 19px);
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .bio-page .parchment-text .opening {
+    font-size: clamp(17px, 4.5vw, 22px);
+    margin-bottom: 25px;
+  }
+
+  .bio-page .parchment-text .signature {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+.bio-page .art-list {
+  font-size: clamp(15px, 4vw, 19px);
+  line-height: 1.5;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.bio-page .art-list li {
+  padding-left: 16px;
+  margin-bottom: 12px;
+  overflow-wrap: break-word;
+}
+
+}
+/* Κάθε νέο τερατάκι */
+
+.moving-monster {
+  position: fixed;
+  display: block;
+  width: 180px;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  will-change: transform;
+}
+
+.moving-monster img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* ===== PAINTINGS BACKGROUND ===== */
+
+body.paintings-page {
+  min-height: 100vh;
+  background: #FF1744;
+  color: white;
+}
+
+/* Αφαιρούμε την εικόνα της πινελιάς */
+body.paintings-page::before {
+  content: none;
+}
+/* Clickable section titles */
+
+.section-title-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section-title-link:visited {
+  color: inherit;
+}
+/* Paintings decorative background */
+
+body.paintings-page {
+  min-height: 100vh;
+  background: #FF1744;
+  color: white;
+}
+/* ===== PAINTINGS GALLERY ===== */
+
+.paintings-gallery {
+  width: 100%;
+  min-height: 100vh;
+  padding: 140px 5% 80px;
+}
+
+.artworks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+.artwork-card {
+  width: 100%;
+  min-width: 0;
+}
+
+
+.artwork-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  border: 5px solid white;
+  border-radius: 8px;
+}
+
+
+/* VIDEOGRAPHY PLAYERS */
+.video-page .artwork-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+  border: 5px solid white;
+  border-radius: 8px;
+}
+
+/* YOUTUBE PLAYER — VIDEOGRAPHY ONLY */
+.video-page iframe.artwork-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  box-sizing: border-box;
+  border: 5px solid white;
+  border-radius: 8px;
+  background: #000;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .artworks-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .artworks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== ARTWORK TITLES ===== */
+
+.artwork-title {
+  font-family: 'Courgette', cursive;
+  font-size: 38px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+/* ===== ARTWORK IMAGE HOVER ===== */
+
+.artwork-card img {
+  transition: transform 0.35s ease,
+              box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.artwork-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 2;
+}
+/* ===== DIGITAL PAGE BACKGROUND ===== */
+
+body.digital-page {
+  min-height: 100vh;
+  background: #7DFF38;
+  color: white;
+}
+
+body.digital-page::before {
+  content: none;
+}
+/* ===== POSTERS PAGE BACKGROUND ===== */
+
+body.posters-page {
+  min-height: 100vh;
+  background: #FF1493;
+  color: white;
+}
+
+body.posters-page::before {
+  content: none;
+}
+/* ===== SCULPTURES PAGE BACKGROUND ===== */
+
+body.sculptures-page {
+  min-height: 100vh;
+  background: #00E5FF;
+  color: white;
+}
+
+body.sculptures-page::before {
+  content: none;
+}
+/* ===== INSTALLATIONS PAGE BACKGROUND ===== */
+
+body.installations-page {
+  min-height: 100vh;
+  background: #00B84A;
+  color: white;
+}
+
+body.installations-page::before {
+  content: none;
+}
+/* ===== ILLUSTRATIONS PAGE BACKGROUND ===== */
+
+body.illustrations-page {
+  min-height: 100vh;
+  background: #2563FF;
+  color: white;
+}
+
+body.illustrations-page::before {
+  content: none;
+}
+/* ===== VIDEOGRAPHY PAGE BACKGROUND ===== */
+
+body.video-page {
+  min-height: 100vh;
+  background: #B000FF;
+  color: white;
+}
+
+body.video-page::before {
+  content: none;
+}
+/* ===== ARTWORKS DROPDOWN LABEL ===== */
+
+.dropdown-label {
+  color: inherit;
+  font: inherit;
+  cursor: default;
+  display: inline-block;
+}
+/* ===== ARTWORK LIGHTBOX ===== */
+
+.artwork-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.88);
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.artwork-lightbox.active {
+  display: flex;
+}
+
+/* Μαύρο παράθυρο */
+.artwork-lightbox-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1500px;
+  max-height: 95vh;
+  min-height: 75vh;
+
+  overflow-y: auto;
+  padding: 45px;
+
+  background: rgba(0, 0, 0, 0.97);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Εικόνα αριστερά */
+.artwork-lightbox-image {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  padding-right: 55px;
+}
+
+/* Πληροφορίες δεξιά + κάθετη γραμμή */
+.artwork-lightbox-info {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+  padding-left: 65px;
+
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+/* Κάθε πεδίο πληροφοριών */
+.artwork-lightbox-info p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+/* Name, Dimensions, Series, Materials */
+.artwork-lightbox-info strong {
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+/* Οι απαντήσεις */
+.artwork-lightbox-info span {
+  color: #e5e5e5;
+  font-size: 24px;
+  font-style: italic;
+  overflow-wrap: anywhere;
+}
+
+/* Κουμπί κλεισίματος */
+.artwork-lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.artwork-lightbox-close:hover {
+  color: #ffd700;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 700px) {
+
+  .artwork-lightbox {
+    padding: 12px;
+  }
+
+  .artwork-lightbox-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    min-height: auto;
+    max-height: 95vh;
+    padding: 55px 20px 25px;
+  }
+
+  .artwork-lightbox-image {
+    max-height: 45vh;
+    padding-right: 0;
+  }
+
+  .artwork-lightbox-info {
+    height: auto;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.45);
+    padding-left: 0;
+    padding-top: 25px;
+    font-size: 18px;
+  }
+
+  .artwork-lightbox-info p {
+    margin-bottom: 18px;
+  }
+
+  .artwork-lightbox-info strong {
+    font-size: 20px;
+  }
+
+  .artwork-lightbox-info span {
+    font-size: 18px;
+  }
+}
+/* White border on homepage artworks */
+.section-art img {
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+/* ===== MOBILE NAVIGATION ===== */
+
+/* Hidden on desktop */
+.mobile-menu-toggle,
+.mobile-navigation {
+  display: none;
+}
+
+@media (max-width: 900px) {
+
+  /* Compact navbar */
+  .navbar .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 69px;
+    padding: 0 16px;
+  }
+
+  /* Hide desktop navigation */
+  .navbar .nav-left,
+  .navbar .nav-right {
+    display: none;
+  }
+
+  /* Keep the original logo centered */
+  .navbar .nav-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 190px;
+    height: 80px;
+  }
+   .navbar .nav-logo-image {
+     width: 90px;
+     height: 48px;
+  }
+  /* Hamburger button */
+  .mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    background: transparent;
+    border: 0;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  .mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+
+  /* Dropdown panel */
+  .mobile-navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: calc(100dvh - 85px);
+    overflow-y: auto;
+    background: inherit;
+    padding: 20px 25px;
+    z-index: 30;
+  }
+
+  .mobile-navigation.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mobile-navigation a,
+  .mobile-navigation summary {
+    display: block;
+    color: white;
+    font-family: 'Starborn', cursive;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mobile-navigation details a {
+    padding: 12px 0 0 18px;
+    font-size: 13px;
+  }
+
+/* Homepage only */
+body:not(.paintings-page):not(.digital-page):not(.posters-page):not(.sculptures-page):not(.installations-page):not(.illustrations-page):not(.video-page):not(.bio-page) .section .section-art {
+  display: none;
+}
+
+body:not(.paintings-page):not(.digital-page):not(.posters-page):not(.sculptures-page):not(.installations-page):not(.illustrations-page):not(.video-page):not(.bio-page) .section::before {
+  background-image: url("mobile-brush.png");
+  background-size: 115% 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body:not(.paintings-page):not(.digital-page):not(.posters-page):not(.sculptures-page):not(.installations-page):not(.illustrations-page):not(.video-page):not(.bio-page) .section .section-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 12px;
+}
+
+body:not(.paintings-page):not(.digital-page):not(.posters-page):not(.sculptures-page):not(.installations-page):not(.illustrations-page):not(.video-page):not(.bio-page) .section .section-content h2 {
+  font-size: clamp(34px, 9vw, 54px);
+  overflow-wrap: anywhere;
+}
+
+}
