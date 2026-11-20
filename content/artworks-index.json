@@ -80,6 +80,12 @@
     "id": "antropocene-series"
   },
   {
+    "name": "Blue S",
+    "image": "/media/blue-s.jpg",
+    "category": "digital",
+    "id": "blue-s"
+  },
+  {
     "image": "/jimmart/media/bumblebees.png",
     "name": "Bumblebees",
     "category": "digital",
