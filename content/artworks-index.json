@@ -167,6 +167,12 @@
     "id": "map"
   },
   {
+    "name": "mums nightmare",
+    "image": "/media/mums-nightmare.jpg",
+    "category": "paintings",
+    "id": "mums-nightmare"
+  },
+  {
     "name": "The Pills",
     "image": "/media/dimitris-makrynikas-08-the-pills.jpg",
     "category": "installations",
