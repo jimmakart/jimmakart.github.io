@@ -129,6 +129,12 @@
     "id": "creature"
   },
   {
+    "name": "Filled Corner",
+    "image": "/media/P1040335.jpg",
+    "category": "installations",
+    "id": "filled-corner"
+  },
+  {
     "name": "GENGAR",
     "image": "/media/gengar-1.png",
     "category": "digital",
