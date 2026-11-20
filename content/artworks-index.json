@@ -80,6 +80,12 @@
     "id": "antropocene-series"
   },
   {
+    "name": "banana dimensions",
+    "image": "/media/banana dimensions.jpg",
+    "category": "paintings",
+    "id": "banana-dimensions"
+  },
+  {
     "name": "Blue S",
     "image": "/media/blue-s.jpg",
     "category": "digital",
