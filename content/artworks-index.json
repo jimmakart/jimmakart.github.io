@@ -117,6 +117,12 @@
     "id": "creature-4"
   },
   {
+    "name": "creature",
+    "image": "/media/creature.jpg",
+    "category": "paintings",
+    "id": "creature"
+  },
+  {
     "name": "hands escaping (1)",
     "image": "/media/hands escaping (1).bmp",
     "category": "sculptures",
