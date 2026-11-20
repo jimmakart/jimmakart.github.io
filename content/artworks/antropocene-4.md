@@ -1,5 +1,6 @@
 {
   "name": "antropocene (4)",
-  "video_file": "/media/antropocene-4-.jpg",
+  "image": "/media/antropocene-4-.jpg",
+  "video_file": "",
   "category": "posters"
 }
