@@ -123,6 +123,12 @@
     "id": "creature"
   },
   {
+    "name": "GENGAR",
+    "image": "/media/gengar-1.png",
+    "category": "digital",
+    "id": "gengar"
+  },
+  {
     "name": "hands escaping (1)",
     "image": "/media/hands escaping (1).bmp",
     "category": "sculptures",
