@@ -5,22 +5,22 @@
   },
   "digital": {
     "left": "bumblebees",
-    "right": "/images/digital/blue s.jpg"
+    "right": "blue-s"
   },
   "posters": {
-    "left": "/images/posters/antropocene (1).jpg",
-    "right": "/images/posters/antropocene (3).jpg"
+    "left": "antropocene-1",
+    "right": "antropocene-3"
   },
   "sculptures": {
-    "left": "/media/hands escaping (1).bmp",
-    "right": "/media/capturing plastic (1).jpeg"
+    "left": "view",
+    "right": "capturing-plastic-5"
   },
   "installations": {
-    "left": "/media/P1040335.jpg",
-    "right": "/media/P1040338.jpg"
+    "left": "antropocene-series",
+    "right": "test"
   },
   "illustrations": {
-    "left": "/images/illustration/map.jpg",
+    "left": "map",
     "right": "handsm"
   },
   "video": {
