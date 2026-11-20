@@ -134,33 +134,33 @@ async function loadHomepageImages() {
   // Original homepage images, used when no artwork is selected.
   const fallbackImages = {
     paintings: {
-      left: "/media/creature (5)-1.jpg",
-      right: "/images/paintings_p/brand.jpg"
-    },
-    digital: {
-      left: "/images/digital/bloom.png",
-      right: "/images/digital/blue s.jpg"
-    },
-    posters: {
-      left: "/images/posters/antropocene (1).jpg",
-      right: "/images/posters/antropocene (3).jpg"
-    },
-    sculptures: {
-      left: "/media/hands escaping (1).bmp",
-      right: "/media/capturing plastic (1).jpeg"
-    },
-    installations: {
-      left: "/media/P1040335.jpg",
-      right: "/media/P1040338.jpg"
-    },
-    illustrations: {
-      left: "/images/illustration/map.jpg",
-      right: "/images/illustration/mock up.jpg"
-    },
-    video: {
-      left: "/Film.png",
-      right: "/Chalk.png"
-    }
+    left: "/media/creature (5).jpg",
+    right: "/media/body n.jpg"
+  },
+  digital: {
+    left: "/media/bumblebees.png",
+    right: "/media/blue-s.jpg"
+  },
+  posters: {
+    left: "/media/antropocene-1-.jpg",
+    right: "/media/antropocene-3-.jpg"
+  },
+  sculptures: {
+    left: "/media/view.jpg",
+    right: "/media/capturing plastic (1).jpeg"
+  },
+  installations: {
+    left: "/media/antropocene-series.jpg",
+    right: "/media/dimitris-makrynikas-08-the-pills.jpg"
+  },
+  illustrations: {
+    left: "/media/map.jpg",
+    right: "/media/handsm-01.jpg"
+  },
+  video: {
+    left: "/Film.png",
+    right: "/Chalk.png"
+  }
   };
 
   // Show original images before CMS data finishes loading.
