@@ -92,6 +92,12 @@
     "id": "blue-s"
   },
   {
+    "name": "bouda",
+    "image": "/media/bouda.png",
+    "category": "digital",
+    "id": "bouda"
+  },
+  {
     "image": "/jimmart/media/bumblebees.png",
     "name": "Bumblebees",
     "category": "digital",
