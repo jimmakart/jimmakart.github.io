@@ -173,6 +173,12 @@
     "id": "test"
   },
   {
+    "name": "the heart of the artist",
+    "image": "/media/the-heart-of-the-artist.jpg",
+    "category": "paintings",
+    "id": "the-heart-of-the-artist"
+  },
+  {
     "name": "VIEW",
     "image": "/media/view.jpg",
     "category": "sculptures",
