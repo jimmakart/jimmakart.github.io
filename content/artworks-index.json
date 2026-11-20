@@ -179,6 +179,12 @@
     "id": "mums-nightmare"
   },
   {
+    "name": "my nightmares",
+    "image": "/media/my-nightmares.jpg",
+    "category": "paintings",
+    "id": "my-nightmares"
+  },
+  {
     "name": "The Pills",
     "image": "/media/dimitris-makrynikas-08-the-pills.jpg",
     "category": "installations",
