@@ -196,6 +196,13 @@
     "id": "handsm"
   },
   {
+    "name": "landscape of a planet with a creature",
+    "image": "/media/creature-19-.jpg",
+    "category": "paintings",
+    "series": "Creatures",
+    "id": "landscape-of-a-planet-with-a-creature"
+  },
+  {
     "category": "video",
     "video_file": "/jimmart/media/dimitris-makrynikas-05-passengers-video-5-sec-22.mp4",
     "name": "passengers",
