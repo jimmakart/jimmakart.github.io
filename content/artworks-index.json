@@ -147,6 +147,12 @@
     "id": "creature-dr-seuss"
   },
   {
+    "name": "Creature yellow",
+    "image": "/media/creature-6-.jpg",
+    "category": "paintings",
+    "id": "creature-yellow"
+  },
+  {
     "name": "creature",
     "image": "/media/creature.jpg",
     "category": "paintings",
