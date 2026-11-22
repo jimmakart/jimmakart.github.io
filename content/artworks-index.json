@@ -221,6 +221,12 @@
     "id": "my-nightmares"
   },
   {
+    "name": "Perspective",
+    "image": "/media/creature-17-.jpg",
+    "category": "paintings",
+    "id": "perspective"
+  },
+  {
     "name": "S 2",
     "image": "/media/s-2.jpg",
     "category": "illustrations",
