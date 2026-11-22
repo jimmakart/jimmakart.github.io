@@ -197,6 +197,12 @@
     "id": "map"
   },
   {
+    "name": "Medusa",
+    "image": "/media/medusa.png",
+    "category": "digital",
+    "id": "medusa"
+  },
+  {
     "name": "mums nightmare",
     "image": "/media/mums-nightmare.jpg",
     "category": "paintings",
