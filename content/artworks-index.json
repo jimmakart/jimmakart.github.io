@@ -135,6 +135,12 @@
     "id": "creature-4"
   },
   {
+    "name": "Creature black",
+    "image": "/media/creature-21-.jpg",
+    "category": "paintings",
+    "id": "creature-black"
+  },
+  {
     "name": "Creature dr seuss",
     "image": "/media/creature-10-.jpg",
     "category": "paintings",
