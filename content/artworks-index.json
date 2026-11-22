@@ -149,6 +149,12 @@
   },
   {
     "name": "Creature close up",
+    "image": "/media/creature-close-2-.jpg",
+    "category": "paintings",
+    "id": "creature-close-up-1"
+  },
+  {
+    "name": "Creature close up",
     "image": "/media/creature-close-3-.jpg",
     "category": "paintings",
     "id": "creature-close-up"
