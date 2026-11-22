@@ -98,6 +98,12 @@
     "id": "bouda"
   },
   {
+    "name": "Branded",
+    "image": "/media/brand.jpg",
+    "category": "paintings",
+    "id": "branded"
+  },
+  {
     "image": "/jimmart/media/bumblebees.png",
     "name": "Bumblebees",
     "category": "digital",
