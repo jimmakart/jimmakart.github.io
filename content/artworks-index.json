@@ -148,6 +148,12 @@
     "id": "creature-blue"
   },
   {
+    "name": "Creature close up",
+    "image": "/media/creature-close-3-.jpg",
+    "category": "paintings",
+    "id": "creature-close-up"
+  },
+  {
     "name": "Creature dr seuss",
     "image": "/media/creature-10-.jpg",
     "category": "paintings",
