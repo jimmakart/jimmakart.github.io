@@ -221,6 +221,15 @@
     "id": "landscape-of-a-planet-with-a-creature"
   },
   {
+    "name": "Maintenance",
+    "image": "/media/dimitris-makrynikas-06a-maintenance-1-ed.jpg",
+    "category": "sculptures",
+    "series": "Control",
+    "materials": "plant, glass, planter",
+    "year": "2022",
+    "id": "maintenance"
+  },
+  {
     "category": "video",
     "video_file": "/jimmart/media/dimitris-makrynikas-05-passengers-video-5-sec-22.mp4",
     "name": "passengers",
