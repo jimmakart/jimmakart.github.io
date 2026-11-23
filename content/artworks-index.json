@@ -227,6 +227,15 @@
     "id": "handsm"
   },
   {
+    "name": "Heart creature",
+    "image": "/media/heart-creature-3-.jpg",
+    "category": "sculptures",
+    "series": "Creatures",
+    "materials": "mixed media",
+    "year": "2021",
+    "id": "heart-creature"
+  },
+  {
     "name": "landscape of a planet with a creature",
     "image": "/media/creature-19-.jpg",
     "category": "paintings",
