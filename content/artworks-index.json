@@ -334,6 +334,15 @@
     "id": "s-2"
   },
   {
+    "name": "Star pod",
+    "image": "/media/star-pod.jpg",
+    "category": "sculptures",
+    "dimensions": "50x40",
+    "materials": "mixed media",
+    "year": "2021",
+    "id": "star-pod"
+  },
+  {
     "name": "The Pills",
     "image": "/media/dimitris-makrynikas-08-the-pills.jpg",
     "category": "installations",
