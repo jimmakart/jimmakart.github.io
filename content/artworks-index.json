@@ -286,6 +286,13 @@
     "id": "maintenance"
   },
   {
+    "name": "Map 2",
+    "image": "/media/map-01.jpg",
+    "category": "illustrations",
+    "year": "2025",
+    "id": "map-2"
+  },
+  {
     "category": "video",
     "video_file": "/jimmart/media/dimitris-makrynikas-05-passengers-video-5-sec-22.mp4",
     "name": "passengers",
