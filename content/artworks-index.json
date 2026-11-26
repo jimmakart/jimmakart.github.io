@@ -153,6 +153,13 @@
     "id": "cat-creature"
   },
   {
+    "name": "Contemporary fish 2",
+    "image": "/media/contemporary-fish-2.jpg",
+    "category": "illustrations",
+    "year": "2023",
+    "id": "contemporary-fish-2"
+  },
+  {
     "name": "contemporary fish",
     "image": "/media/contemporary-fish.jpg",
     "category": "illustrations",
