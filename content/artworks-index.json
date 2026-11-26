@@ -344,6 +344,13 @@
     "id": "medusa"
   },
   {
+    "name": "mock up",
+    "image": "/media/mock-up.jpg",
+    "category": "illustrations",
+    "year": "2024",
+    "id": "mock-up"
+  },
+  {
     "name": "mums nightmare",
     "image": "/media/mums-nightmare.jpg",
     "category": "paintings",
